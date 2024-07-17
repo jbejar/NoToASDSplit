@@ -1,4 +1,4 @@
 export { Arrow } from "./Arrow";
 export { ArrowBox } from "./ArrowBox";
-export { Firebase } from "./Firebase";
+export { Logo } from "./Logo";
 export { Header } from "./Header";

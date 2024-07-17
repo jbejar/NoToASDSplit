@@ -1,6 +1,6 @@
 :root {
   --primary-contrast: #0b151e;
-  --secondary-contrast: #0b151e99;
+  --secondary-contrast: #0b151ed7;
   --background-gradient: linear-gradient(90deg, #ffca28, #f57c00);
   --background: #ffca28;
   --muted: rgba(194, 137, 3, 0.3);
@@ -14,7 +14,7 @@
 
 .dark-theme {
   --primary-contrast: #fff;
-  --secondary-contrast: #ffffff99;
+  --secondary-contrast: #ffffffd7;
   --background-gradient: linear-gradient(90deg, #0b151e, #0b151e);
   --background: #0b151e;
   --muted: rgba(21, 39, 60, 0.6);
@@ -29,6 +29,7 @@
 * {
   margin: 0;
   font-family: "Google Sans";
+  font-size: 18px;
 }
 
 html {
@@ -64,6 +65,7 @@ body {
     rgba(0, 0, 0, 1) 0%,
     rgba(0, 0, 0, 0) 50%
   );
+
 }
 
 .top-gradient {
@@ -80,7 +82,7 @@ body {
   position: fixed;
   bottom: 0;
   width: 90%;
-  height: 900px;
+  height: 700px;
   margin-bottom: -550px;
   pointer-events: none;
   user-select: none;
@@ -184,12 +186,32 @@ body {
   gap: 10px;
 }
 
+.player-wrapper {
+  cursor: pointer;
+}
+.player-wrapper:hover{ 
+  background-color: var(--muted); /* Change background color on hover */
+  color: var(--secondary-contrast); /* Adjust text color on hover */
+}
+.player-wrapper h2{
+  margin-bottom: 14px;
+}
+.player-wrapper .center {
+  text-align:center
+}
+
+.player-wrapper img {
+  width: 75%;
+  margin-top: 20px;
+  
+}
+
 .features {
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   text-wrap: balance;
 }
 .data-container {
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   text-wrap: pretty;
 }
 
@@ -197,7 +219,7 @@ body {
   flex-direction: column;
   padding: 24px;
   gap: 12px;
-  max-width: 360px;
+  max-width: 500px;
 }
 
 .card h2 {
@@ -207,7 +229,7 @@ body {
   letter-spacing: -2%;
 }
 .card p {
-  font-size: 13px;
+  font-size: 25px;
   line-height: 1.5;
   color: var(--secondary-contrast);
   letter-spacing: -1%;

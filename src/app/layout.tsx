@@ -4,8 +4,8 @@ import "./globals.css";
 import { Header } from "./components";
 
 export const metadata: Metadata = {
-  title: "Next.js on Firebase App Hosting",
-  description: "",
+  title: "Reasons to not Split",
+  description: "A podcast to discuss facts surrounding the proposed Alpine School District reconfigurations.",
 };
 
 export default function RootLayout({
@@ -25,6 +25,10 @@ export default function RootLayout({
         <Header />
         {children}
         <div className="bottom-gradient" />
+        Jonathan Bejarano
+        <div/>
+        2024
+        <div/>
       </body>
     </html>
   );
